@@ -86,7 +86,7 @@ AddEventHandler('playerConnecting', function(name, skr, deferrals)
 
     if (data.submitId == 'connect') then 
             clicked = true;
-            d.done()
+            deferrals.done()
         end
     end)
 end)
